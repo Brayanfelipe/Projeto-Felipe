@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hide demo</title>
+  <script src="Script/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+ 
+<p>Hello</p>
+<a href="#" id="esconde">Clique aqui para esconder</a><br>
+<a href="#" id="exibir">Clique aqui para exibir</a><br>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum fermentum odio non rhoncus. Vivamus at hendrerit augue. Maecenas faucibus malesuada massa ut imperdiet. Morbi eget ultricies libero. Sed augue quam, hendrerit placerat lacus vitae, mattis porta leo. Vestibulum vulputate lacus ac erat dictum lacinia. Phasellus at ultrices ante. Integer nec efficitur urna. Morbi viverra lectus eros, vel molestie lorem ullamcorper id. Duis pellentesque volutpat erat quis cursus. Curabitur ultricies convallis ipsum, a convallis arcu semper ut. In fringilla mattis cursus. Duis vel lacus ante. Duis sodales justo lacus, semper euismod dui euismod vel.
+</p>
+ 
+<script>
+$( "#esconde" ).click(function( event ) {
+	event.preventDefault();
+     $( "p" ).hide(8000);
+});
+
+$( "#exibir" ).click(function( event ) {
+	event.preventDefault();
+    $( "p").show(10000);
+});
+
+</script>
+ 
+</body>
+</html>
